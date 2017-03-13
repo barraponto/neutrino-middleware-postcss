@@ -1,5 +1,6 @@
 # Neutrino PostCSS preset
 [![NPM version][npm-image]][npm-url] [![NPM downloads][npm-downloads]][npm-url] [![Join Slack][slack-image]][slack-url]
+
 `neutrino-preset-postcss` is a Neutrino preset that adds support to PostCSS on
 top of the basic `neutrino-preset-web`. Use v1 for Neutrino 4 support.
 
@@ -24,9 +25,9 @@ Also, don't forget to install your favorite PostCSS plugins!
 
 ## To Do
 
-[ ] Support PostCSS config in Neutrino `package.json` configuration.
-[ ] Create pre-configured presets for cssnext and autoprefixer.
-[ ] Support Neutrino 5.
+- [ ] Support PostCSS config in Neutrino `package.json` configuration.
+- [ ] Create pre-configured presets for cssnext and autoprefixer.
+- [ ] Support Neutrino 5.
 
 [postcss-config-docs]: https://github.com/michael-ciniawsky/postcss-load-config#usage
 [npm-image]: https://img.shields.io/npm/v/neutrino-preset-postcss.svg
