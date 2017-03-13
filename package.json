@@ -1,0 +1,20 @@
+{
+  "name": "neutrino-preset-postcss",
+  "version": "1.0.0",
+  "description": "Neutrino preset for adding PostCSS support.",
+  "main": "src/index.js",
+  "keywords": [
+    "neutrino",
+    "neutrino-preset",
+    "postcss"
+  ],
+  "peerDependencies": {
+    "neutrino-preset-web": "^4.0.0",
+    "neutrino": "^4.0.0"
+  },
+  "author": "Capi Etheriel <barraponto@gmail.com> (https://barraponto.blog.br)",
+  "license": "GPL-3.0",
+  "dependencies": {
+    "postcss-loader": "^1.3.3"
+  }
+}
