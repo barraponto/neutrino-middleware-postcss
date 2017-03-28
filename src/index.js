@@ -1,10 +1,12 @@
-const POSTCSS_LOADER = require.resolve('postcss-loader');
-module.exports = ({ config }) => {
-  config.module.rule('css')
-    .loader('postcss', POSTCSS_LOADER, { map: process.env.NODE_ENV !== 'production' });
-  config.module.rule('css')
-    .loader('css', ({ loader, options }) => ({
-      loader,
-      options: Object.assign({}, options, { importLoaders: 1 }),
-    }));
+const merge = require('deepmerge');
+
+module.exports = ({ config }, options = {}) => {
+  config.module.rule('style')
+    .use('postcss')
+    .loader(require.resolve('postcss-loader'))
+    .options(merge({ map: process.env.NODE_ENV !== 'production' }, options));
+
+  config.module.rule('style')
+    .use('css')
+    .tap(options => merge(options, { importLoaders: 1 }));
 };
