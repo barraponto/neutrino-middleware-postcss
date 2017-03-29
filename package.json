@@ -21,7 +21,12 @@
   },
   "devDependencies": {
     "commitizen": "^2.9.6",
-    "cz-conventional-changelog": "^2.0.0"
+    "cz-conventional-changelog": "^2.0.0",
+    "eslint": "^3.18.0",
+    "eslint-plugin-prettier": "^2.0.1",
+    "neutrino": "^5.0.2",
+    "neutrino-preset-airbnb-base": "^5.0.2",
+    "prettier": "^0.22.0"
   },
   "config": {
     "commitizen": {
