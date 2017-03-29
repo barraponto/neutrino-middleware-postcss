@@ -41,7 +41,7 @@ Don't forget to install the PostCSS plugins you want to use!
 For CSSNext support, try [neutrino-preset-postcss-cssnext][cssnext-preset].
 
 [postcss-config-docs]: https://github.com/michael-ciniawsky/postcss-load-config#usage
-[cssnext-preset]: https://npmjs.org/package/neutrino-preset-postcss-cssnext
+[cssnext-preset]: https://npmjs.org/package/neutrino-preset-cssnext
 [npm-image]: https://img.shields.io/npm/v/neutrino-middleware-postcss.svg
 [npm-downloads]: https://img.shields.io/npm/dt/neutrino-middleware-postcss.svg
 [npm-url]: https://npmjs.org/package/neutrino-middleware-postcss
