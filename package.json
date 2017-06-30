@@ -1,6 +1,6 @@
 {
   "name": "neutrino-middleware-postcss",
-  "version": "2.0.2",
+  "version": "3.0.0-rc.1",
   "description": "Neutrino preset for adding PostCSS support.",
   "main": "src/index.js",
   "keywords": [
@@ -9,11 +9,11 @@
     "postcss"
   ],
   "peerDependencies": {
-    "neutrino": "^5.0.0"
+    "neutrino": "^6.1.4"
   },
   "author": "Capi Etheriel <barraponto@gmail.com> (https://barraponto.blog.br)",
-  "repository": "https://github.com/barraponto/neutrino-preset-postcss",
-  "bugs": "https://github.com/barraponto/neutrino-preset-postcss/issues",
+  "repository": "https://github.com/barraponto/neutrino-middleware-postcss",
+  "bugs": "https://github.com/barraponto/neutrino-middleware-postcss/issues",
   "license": "GPL-3.0",
   "dependencies": {
     "deepmerge": "^1.4.4",
