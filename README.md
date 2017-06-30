@@ -9,59 +9,31 @@ PostCSS plugins.
 
 ## Documentation
 
-Install this middleware to your development dependencies, then set it in
-`package.json`:
+Install this middleware to your development dependencies, then set it up in
+`.neutrinorc.js` just like you would with regular postcss-loader:
 
-```json
-"neutrino": {
-  "use": [
-    "neutrino-preset-web",
-    "neutrino-middleware-postcss"
-  ]
-}
+```js
+  const autoprefixer = require('autoprefixer');
+
+  module.exports = {
+    use: [
+      "neutrino-preset-web",
+      ["neutrino-middleware-postcss", {
+        plugins: (loader) => [
+          autoprefixer()
+        ]
+      }]
+    ],
+    ...
+  };
 ```
 
-The configuration will be picked up like any regular PostCSS project (see
-[PostCSS configuration documentation][postcss-config-docs].). For example, it
-could be added in `package.json`:
+Don't forget to actually install the plugins you're going to use!
 
-```json
-"postcss": {
-  "plugins": {
-    "cssnext": {},
-  }
-},
-"neutrino": {
-  "use": [
-    "neutrino-preset-web",
-    "neutrino-middleware-postcss"
-  ]
-}
-```
+## cssnext
 
-Don't forget to install the PostCSS plugins you want to use!
-
-## Extending into a preset
-
-This middleware was designed to be extended from a Neutrino preset.
-All you have to do is pass the options when using the middlware:
-
-```javascript
-const postcss = require('neutrino-middleware-postcss');
-
-module.exports = (neutrino) => {
-  const cssnext = require('postcss-cssnext');
-  neutrino.use(postcss, {
-    plugins: [
-      cssnext()
-    ]
-  });
-};
-```
-
-The example comes directly from the
-[neutrino-preset-postcss-cssnext][cssnext-preset]. If that's all you need, use
-that preset.
+[neutrino-preset-postcss-cssnext][cssnext-preset] is on hold until [cssnext
+supports PostCSS 6.x](https://github.com/MoOx/postcss-cssnext/issues/374).
 
 ## Using with ExtractTextPlugin
 
