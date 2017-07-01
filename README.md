@@ -19,7 +19,7 @@ Install this middleware to your development dependencies, then set it up in
     use: [
       "neutrino-preset-web",
       ["neutrino-middleware-postcss", {
-        plugins: (loader) => [
+        plugins: [
           autoprefixer()
         ]
       }]
@@ -27,8 +27,6 @@ Install this middleware to your development dependencies, then set it up in
     ...
   };
 ```
-
-Don't forget to actually install the plugins you're going to use!
 
 ## cssnext
 
