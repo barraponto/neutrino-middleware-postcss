@@ -4,7 +4,6 @@ module.exports = {
       'neutrino-preset-airbnb-base',
       {
         eslint: {
-          node: true,
           envs: ['browser', 'commonjs', 'node'],
           plugins: ['eslint-plugin-prettier'],
           rules: {
