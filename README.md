@@ -30,8 +30,7 @@ Install this middleware to your development dependencies, then set it up in
 
 ## cssnext
 
-[neutrino-preset-postcss-cssnext][cssnext-preset] is on hold until [cssnext
-supports PostCSS 6.x](https://github.com/MoOx/postcss-cssnext/issues/374).
+Just use [neutrino-preset-postcss-cssnext][cssnext-preset].
 
 ## Using with ExtractTextPlugin
 
