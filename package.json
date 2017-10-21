@@ -12,7 +12,7 @@
     "postcss"
   ],
   "peerDependencies": {
-    "neutrino": "^6.1.4"
+    "neutrino": "^6.0.0 || ^7.0.0"
   },
   "author": "Capi Etheriel <barraponto@gmail.com> (https://barraponto.blog.br)",
   "repository": "https://github.com/barraponto/neutrino-middleware-postcss",
