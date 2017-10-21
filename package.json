@@ -3,6 +3,9 @@
   "version": "3.0.0",
   "description": "Neutrino preset for adding PostCSS support.",
   "main": "src/index.js",
+  "scripts": {
+    "lint": "neutrino lint"
+  },
   "keywords": [
     "neutrino",
     "neutrino-middleware",
